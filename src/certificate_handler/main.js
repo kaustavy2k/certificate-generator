@@ -5,6 +5,7 @@ let clickcount = -1;
 let value;
 let rString;
 let flag = 0;
+const spin = document.getElementById("spin");
 let qr = document.getElementById("qrcode");
 
 //Create unique id
@@ -77,6 +78,7 @@ inp.addEventListener("keypress", (event) => {
 btn.addEventListener("click", async (event) => {
   let val = inp.value;
   if (val != "") {
+    spin.className = "fa fa-refresh fa-spin";
     value = toTitleCase(val);
     rString = randomString();
     try {
@@ -90,10 +92,12 @@ btn.addEventListener("click", async (event) => {
       });
       if (res.status === 500) {
         alert("Please Enter Correct Name");
+        spin.className = "";
       } else {
         clickcount += 2;
         qrgenerate(rString);
         modifyPdf(value);
+        spin.className = "";
       }
     } catch (err) {
       console.log("error", err);
