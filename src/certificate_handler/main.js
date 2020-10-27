@@ -27,7 +27,7 @@ function qrgenerate(uid) {
 
 //pdf editor
 async function modifyPdf(name) {
-  const url = "/cert.pdf";
+  const url = "/stark.pdf";
   const existingPdfBytes = await fetch(url).then((res) => res.arrayBuffer());
   const pdfDoc = await PDFDocument.load(existingPdfBytes);
   const pages = pdfDoc.getPages();
@@ -36,10 +36,10 @@ async function modifyPdf(name) {
   const pngUrl = srcval;
   const pngImageBytes = await fetch(pngUrl).then((res) => res.arrayBuffer());
   const pngImage = await pdfDoc.embedPng(pngImageBytes);
-  const pngDims = pngImage.scale(0.5);
+  const pngDims = pngImage.scale(0.3);
   firstPage.drawImage(pngImage, {
-    x: firstPage.getWidth() / 2 - pngDims.width / 2 + 175,
-    y: firstPage.getHeight() / 2 - pngDims.height + 250,
+    x: firstPage.getWidth() / 2 - pngDims.width / 2 + 360,
+    y: firstPage.getHeight() / 2 - pngDims.height + 280,
     width: pngDims.width,
     height: pngDims.height,
   });
