@@ -20,7 +20,7 @@ function randomString() {
 //qrGenerator
 function qrgenerate(uid) {
   let qrcode = new QRCode(qr);
-  let url = "127.0.0.1:8080/validation?value=" + uid;
+  let url = "https://certificateGen.herokuapp.com/validation?value=" + uid;
   qrcode.makeCode(url);
 }
 
