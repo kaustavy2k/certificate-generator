@@ -31,7 +31,7 @@ app.post("/", async (req, res) => {
 
 
 //validation route
-app.get("https://generate-certy.herokuapp.com/validation", checkuser.validation);
+app.get("/validation", checkuser.validation);
 
 app.listen(port, () => {
   console.log("running");
