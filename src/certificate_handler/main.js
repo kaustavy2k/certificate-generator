@@ -80,7 +80,7 @@ btn.addEventListener("click", async (event) => {
     value = toTitleCase(val);
     rString = randomString();
     try {
-      const res = await fetch("http://127.0.0.1:8080/", {
+      const res = await fetch("https://generate-certy.herokuapp.com/", {
         method: "POST",
         headers: {
           Accept: "application/json",
