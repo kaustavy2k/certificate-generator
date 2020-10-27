@@ -4,8 +4,8 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "ndoe app.js",
-    "dev":"nodemon app.js"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "keywords": [],
   "author": "Kaustav",
@@ -19,7 +19,7 @@
     "mongoose": "^5.10.9",
     "pug": "^3.0.0"
   },
-  "engines":{
+  "engines": {
     "node": "14.x"
   }
 }

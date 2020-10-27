@@ -1,5 +1,4 @@
 const { usernames } = require("../database_handler/server");
-console.log(usernames);
 const url = require("url");
 exports.validation = async (req, res) => {
   let { query } = url.parse(req.url, true);
