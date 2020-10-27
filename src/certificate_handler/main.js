@@ -38,7 +38,7 @@ async function modifyPdf(name) {
   const pngImage = await pdfDoc.embedPng(pngImageBytes);
   const pngDims = pngImage.scale(0.3);
   firstPage.drawImage(pngImage, {
-    x: firstPage.getWidth() / 2 - pngDims.width / 2 + 360,
+    x: firstPage.getWidth() / 2 - pngDims.width / 2 + 350,
     y: firstPage.getHeight() / 2 - pngDims.height + 280,
     width: pngDims.width,
     height: pngDims.height,
@@ -46,7 +46,7 @@ async function modifyPdf(name) {
   const Font = await pdfDoc.embedFont(StandardFonts.TimesRomanBoldItalic);
   const { width, height } = firstPage.getSize();
   firstPage.drawText(name, {
-    x: 420,
+    x: 440,
     y: 300,
     size: 30,
     font: Font,
