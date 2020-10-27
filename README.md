@@ -1,3 +1,3 @@
 # certificate-generator
 
-# https://certificateGen.herokuapp.com/
+# https://generate-certy.herokuapp.com/
