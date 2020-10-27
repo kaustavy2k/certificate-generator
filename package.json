@@ -4,10 +4,11 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "ndoe app.js",
+    "dev":"nodemon app.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Kaustav",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^2.0.5"
