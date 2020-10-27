@@ -46,8 +46,8 @@ async function modifyPdf(name) {
   const Font = await pdfDoc.embedFont(StandardFonts.TimesRomanBoldItalic);
   const { width, height } = firstPage.getSize();
   firstPage.drawText(name, {
-    x: 340,
-    y: 245,
+    x: 380,
+    y: 345,
     size: 30,
     font: Font,
     color: rgb(0, 0, 0),
