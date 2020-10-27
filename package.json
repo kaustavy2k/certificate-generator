@@ -4,11 +4,10 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js"
+    "start": "nodemon app.js"
   },
   "keywords": [],
-  "author": "Kaustav Basak",
+  "author": "",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^2.0.5"
@@ -18,8 +17,5 @@
     "express": "^4.17.1",
     "mongoose": "^5.10.9",
     "pug": "^3.0.0"
-  },
-  "engines":{
-    "node": "14.x"
   }
 }
