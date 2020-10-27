@@ -14,10 +14,10 @@ app.use(express.static(__dirname + "/views"));
 app.use(express.static(__dirname + "/src/validation_handler"));
 
 //Homepage routes
-app.get("/", (req, res) => {
+app.get("https://generate-certy.herokuapp.com/", (req, res) => {
   res.status(200).sendFile("index.html", { root: __dirname });
 });
-app.post("/", async (req, res) => {
+app.post("https://generate-certy.herokuapp.com/", async (req, res) => {
   
   let checkname = await adminpanels.find({ name: req.body.name });
   if (checkname.length != 0) {
@@ -31,7 +31,7 @@ app.post("/", async (req, res) => {
 
 
 //validation route
-app.get("/validation", checkuser.validation);
+app.get("https://generate-certy.herokuapp.com/validation", checkuser.validation);
 
 app.listen(port, () => {
   console.log("running");
