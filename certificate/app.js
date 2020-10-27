@@ -1,6 +1,7 @@
 const express = require("express");
 const { usernames, adminpanels } = require("./src/database_handler/server");
 let checkuser = require("./src/validation_handler/validation");
+const port=process.env.PORT;
 const app = express();
 app.use(express.json());
 app.set("views", __dirname + "/views");
@@ -32,6 +33,6 @@ app.post("/", async (req, res) => {
 //validation route
 app.get("/validation", checkuser.validation);
 
-app.listen(8080, () => {
+app.listen(port, () => {
   console.log("running");
 });
