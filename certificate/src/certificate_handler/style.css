@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+  body {
+    font-family: sans-serif;
+    margin-top: 40px;
+    font-size: 30px;
+    position: relative;
+  }
+  .darkmode{
+      position: absolute;
+      right:30;
+      height: 100px;
+  }
+  .content{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  }
+  h4 {
+    margin-bottom: 40px;
+    font-weight: bolder;
+    font-size: 26px;
+    color: blue;
+  }
+  
+  #img {
+    border-radius: 150%;
+    height: 120px;
+    margin-bottom: 20px;
+  }
+  .username{
+      font-size: 23px;
+      font-family: cursive;
+      margin-bottom: 20px;
+  }
+  input {
+    height: 40px;
+    width: 350px;
+    text-align: center;
+    font-size: large;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    text-transform: capitalize;
+  }
+  
+  #submitBtn {
+    background: #8bc34a;
+    outline: none;
+    color: rgb(255, 255, 255);
+    border: none;
+    font-size: 20px;
+    padding: 15px 15px;
+    margin-top: 60px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 250px;
+  }
+  /* #submitBtn:hover{
+      background-color: #a0f341;
+      font-size: 23px;
+      transition: all 0.4s;
+  } */
+  .dark-mode {
+    background-color: rgb(31, 29, 29);
+    color: white;
+  }
+
+  @media (hover:hover){
+    #submitBtn:hover{
+      background-color: #a0f341;
+      font-size: 23px;
+      transition: all 0.4s;
+  }
+}

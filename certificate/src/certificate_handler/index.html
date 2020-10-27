@@ -1,0 +1,34 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Get Certificate DSC</title>
+        <link rel="stylesheet" type="text/css" href="/style.css">
+        <link rel="stylesheet" type="text/css" href="/clean-switch.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="darkmode" title="Switch modes">
+        <label class="cl-switch cl-switch-black">
+            <input class="dark-light" type="checkbox">
+            <span class="switcher"></span>
+        </label>
+        </div>
+        
+        <div class="content">
+            <img src="/download.png" id="img" alt="DSC Logo">
+            <div id="qrcode" style="display: none;"></div>
+            <h4>Get Your Certificate Here!</h4>
+            <label class="username" for="name">Type Your Name</label>
+            <input type="text" placeholder="Name" id="name" autocomplete="on">
+            <button id="submitBtn"><i id="spin"></i> Get Certificate</button>
+            
+        </div>
+    <script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
+    <script src="https://unpkg.com/downloadjs@1.4.7"></script>
+    <script src="/qrcode.min.js"></script>
+    <script src="/main.js"></script>
+ 
+      
+    </body>
+</html>
